@@ -2,11 +2,11 @@ let mongoose = require('mongoose');
 
 const server = 'http://localhost:27017';
 const database = 'rest-api-workshop';
-const user = 'virendra';
-const password = 'viren45mca';
+const user = 'username';
+const password = 'password;
 
 mongoose.set('useCreateIndex', true)
-mongoose.connect(`mongodb://localhost:27017/${database}` ,{
+mongoose.connect(`mongodb://${user}:${password}@localhost:27017/${database}` ,{
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
